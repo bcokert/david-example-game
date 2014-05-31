@@ -1,0 +1,30 @@
+/* This is where we define the appearance of html objects.
+ * HTML Defines the structure of the page, with 'things' in it.
+ * CSS Defines the appearance of the page, chaning 'things' in html
+ */
+
+.grid {
+    width: 400px;
+    height: 400px;
+    float: left;
+}
+
+.row {
+    width: 100%; /* Same width as parent, which is the grid */
+    height: 100px;
+    float: left;
+    clear: both;
+}
+
+.cell {
+    width: 100px;
+    height: 100%;
+
+    background-color: #f00; /* RGB */
+    border-radius: 10px;
+
+    float: left;
+
+    font-size: 60px;
+    text-align: center;
+}
