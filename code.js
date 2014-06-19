@@ -10,6 +10,8 @@ $(document).ready(function() {
     /* Setup a click hander, so that a certain function is run when you click */
     $('.cell').click(function(event) {
         var clicked_cell = $(event.target);
-        clicked_cell.text(parseInt(clicked_cell.text()) + 1);
+        var value = parseInt(clicked_cell.text()) + 1
+        clicked_cell.text(value);
+        clicked_cell.css('background-color', '#ff' + value + 'c00');
     });
 });
